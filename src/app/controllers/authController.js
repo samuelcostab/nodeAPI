@@ -13,6 +13,11 @@ function generateToken(params = {}) {
     return jwt.sign({ params }, authConfig.secret, { expiresIn: 86400, });
 }
 
+router.get('/', async (req, res) => {
+    res.send("Bem vindo a API. Para acessar algumas funcionalidade tem que se cadastrar/ By: Samuel Brito")
+ 
+ });
+
 router.post('/register', async (req, res) => {
     const { email } = req.body;
     try {
