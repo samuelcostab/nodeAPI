@@ -6,7 +6,9 @@ const router = express.Router();
 router.use(authMiddleware);
 
 router.get('/', (req, res) => {
+    res.send("Bem vindo a API")
     res.send({ ok: true });
+    
 });
 
 module.exports = app => app.use('/projects', router);

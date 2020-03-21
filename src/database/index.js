@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://deploy:deploy@cluster0-866aj.mongodb.net/test?retryWrites=true&w=majority', { 
+mongoose.connect('mongodb+srv://deploy:deploy@cluster0-866aj.mongodb.net/pecaMais?retryWrites=true&w=majority', { 
     useMongoClient: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
