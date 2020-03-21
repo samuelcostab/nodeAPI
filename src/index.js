@@ -9,4 +9,4 @@ app.use(bodyParser.urlencoded({ extended:false }));
 require('./app/controllers/authController')(app);
 require('./app/controllers/projectController')(app);
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
